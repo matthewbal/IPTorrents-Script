@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "content_scripts": [ {
+        "exclude_globs":    [  ],
+        "include_globs":    [ "*" ],
+        "js":               [ "torrent.user.js" ],
+        "matches":          [   "https://ipt-update.com/t*",
+                                "http://ipt-update.com/t*"
+                            ],
+        "run_at": "document_end"
+    } ],
+    "converted_from_user_script": true,
+    "description":  "determines quality of torrents(for seeding) and adds a colored value on the screen to represent that",
+    "name":         "ipt-torrents torrent analyzer",
+    "version":      "1"
+}
